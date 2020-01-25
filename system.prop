@@ -1,3 +1,108 @@
 #
 # system.prop for BLU_STUDIO_G2
 #
+
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+#Add for NVRAM (Start) @{
+ro.rgk_nvram_lid=71
+#Add for NVRAM (End) }@
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+wifi.direct.interface=p2p0
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+ro.sys.usb.storage.type=mtp
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+# USB MIDI
+ro.sys.usb.midi=no
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+ro.kernel.zio=38,108,105,16
+#ro.kernel.qemu=0
+#ro.kernel.qemu.gles=0
+ro.opengles.version=131072
+#ro.boot.selinux=disable
+
+# Disable dirty region for Mali
+debug.hwui.render_dirty_regions=false
+
+ro.sf.lcd_density=240
+
+# add liuhuaizhi 20151201(start)
+# remove shutanimation
+ro.operator.optr=CUST
+ro.rgk_anim_duration=10000
+# add liuhuaizhi 20151201(end)
+#Add, JWLW-1141, zhangzixiao, 20140402, Start
+ro.sms.dual.ringtones.support=no
+#Add, JWLW-1141, zhangzixiao, 20140402, End
+
+#Add by chenshu 20160607, 7bit lossy enconding when use google messenger apk as default sms application start
+ro.rgk_7bit_lossy_use_messenger=yes
+#Add by chenshu 20160607, 7bit lossy enconding when use google messenger apk as default sms application end
+#add setupwizard yb 20160510
+ro.setupwizard.suppress_d2d=true
+ro.setupwizard.suppress_d2d_nfc=true
+
+#A BUG_ID:DLYQL-1003 luoran 20171013(start)
+blu.spec.chipset = MT6580
+blu.spec.chipset.info = 1.3GHz quad-core
+blu.spec.simslots = 2
+blu.spec.ram = 512 MB
+blu.spec.rom = 8 Gb
+blu.spec.2G = GSM B2/3/5/8
+blu.spec.3G = WCDMA B1/2/4/5
+blu.spec.4G =
+blu.spec.cdma =
+blu.spec.battery = External
+blu.spec.battery.capacity = 2200 mAh
+blu.spec.camera.rear = 5 MP
+blu.spec.camera.rear.default = 5 MP
+blu.spec.camera.front = 5 MP
+blu.spec.camera.front.default =	5 MP
+blu.spec.languages = 36
+#A BUG_ID:DLYQL-1003 luoran 20171013(end)
+
+
