@@ -9,7 +9,7 @@ DEVICE_PACKAGE_OVERLAYS += device/BLU/BLU_STUDIO_G2/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/BLU/BLU_STUDIO_G2/kernel
+	LOCAL_KERNEL := device/BLU/BLU_STUDIO_G2/prebuilt/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
