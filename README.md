@@ -3,7 +3,7 @@
 The Blu Studio G2 (codenamed _"BLU_STUDIO_G2"_) is a smartphone from Blu.
 It was released in August 2016.
 
-| Basic                   | Spec Sheet                                             |
+| Feature                 | Blu Studio G2                                          |
 |------------------------:|:-------------------------------------------------------|
 | Chipset                 | Mediatek MT6580                                        |
 | CPU                     | Quad-core 1.3 GHz Arm Cortex A-7                       |
