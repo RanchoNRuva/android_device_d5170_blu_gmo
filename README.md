@@ -1,8 +1,5 @@
 # Device Tree for Blu Studio G2 (BLU_STUDIO_G2)
 
-Copyright 2014-2016, The CyanogenMod Project
-Copyright 2017-2018, The LineageOS Project
-
 The Blu Studio G2 (codenamed _"BLU_STUDIO_G2"_) is a smartphone from Blu.
 It was released in August 2016.
 
