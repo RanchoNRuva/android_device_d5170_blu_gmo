@@ -1,0 +1,36 @@
+# ==============================================
+# Policy File of /system/bin/mvg_spoh Executable File
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mvg_spoh_exec , exec_type, file_type;
+type mvg_spoh ,domain;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+#permissive mvg_spoh;
+
+init_daemon_domain(mvg_spoh)
+
+# Date : WK16.11
+# Purpose : for power loss test driver module operation.
+# Spoh is a testing program only for k80tlc_gmo_spoh project use
+#============= spoh_tst ========================
+userdebug_or_eng(`
+  allow mvg_spoh system_file:file execute_no_trans;
+  allow mvg_spoh power_loss_test_device:chr_file rw_file_perms;
+  allow mvg_spoh pmt_device:chr_file rw_file_perms;
+  allow mvg_spoh protect_f_device:chr_file rw_file_perms;
+  allow mvg_spoh usrdata_device:chr_file rw_file_perms;
+  allow mvg_spoh protect_f_data_file:file rw_file_perms;
+  allow mvg_spoh rawfs:file create_file_perms;
+  allow mvg_spoh rawfs:dir create_dir_perms;
+  allow mvg_spoh self:capability { dac_read_search dac_override sys_resource };
+  allow mvg_spoh mtd_device:dir search;
+  allow mvg_spoh mtd_device:chr_file create_file_perms;
+')

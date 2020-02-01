@@ -1,0 +1,4 @@
+<resources>
+    <bool name="is_enter_settings">true</bool><!--Add BUG_ID:DWLEBM-226 zhaopenglin 20160408-->
+    <bool name="gmms_unreadSupport">true</bool><!--Add BUG_ID:DWYQDSS-275 zhaopenglin 20160714-->
+</resources>

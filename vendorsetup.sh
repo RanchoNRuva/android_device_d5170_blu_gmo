@@ -1,0 +1,4 @@
+add_lunch_combo cm_d5170_blu_gmo-userdebug
+add_lunch_combo cm_d5170_blu_gmo-eng
+
+

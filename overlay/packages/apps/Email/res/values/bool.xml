@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- add bug_id DWYQDSS-265 20160706 liupeng  (start) -->
+    <!-- remove  add calender && contact menus of email -->
+    <bool name="is_mtk_calender">false</bool>
+    <bool name="hide_contact_option">false</bool>
+    <!-- add bug_id DWYQDSS-265 20160706 liupeng  (end) -->
+
+</resources>
