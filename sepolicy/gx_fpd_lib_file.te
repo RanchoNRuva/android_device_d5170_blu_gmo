@@ -1,2 +1,0 @@
-
-allow gx_fpd_lib_file labeledfs:filesystem associate;
