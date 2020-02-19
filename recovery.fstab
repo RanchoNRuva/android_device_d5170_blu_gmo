@@ -8,4 +8,5 @@
 /sdcard		    vfat		  /dev/block/mmcblk0p6
 /system		    ext4		  /dev/block/mmcblk0p3
 
-PRODUCT_COPY_FILES += device/ratech/d5170_blu_gmo/twrp.fstab
+PRODUCT_COPY_FILES += \
+        device/ratech/d5170_blu_gmo/fstab.mt6580
